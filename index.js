@@ -6,6 +6,7 @@ const cors = require("cors");
 const app = express();
 const port = process.env.PORT || 5000;
 
+//database connection
 const pool = new Pool({
   user: process.env.PGUSER,
   host: process.env.PGHOST,
